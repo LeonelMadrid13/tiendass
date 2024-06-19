@@ -5,7 +5,7 @@ const Cart = ({ cartItems = [], removeFromCart }) => {
     const total = cartItems.reduce((acc, item) => acc + item.price, 0);
 
     return (
-        <div className="cart">
+        <div className="cart" id='cart'>
             <h2>Carrito de Compras</h2>
             {cartItems.length === 0 ? (
                 <p>El carrito está vacío</p>
