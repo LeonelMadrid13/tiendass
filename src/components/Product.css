@@ -1,0 +1,75 @@
+.product-item {
+    background-color: #020202;
+    padding: 1rem;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 1200px;
+    width: 100%;
+    max-width: 800px;
+    /* Adjust max-width as needed */
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item .GorraBlanca {
+    top: 100px;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s;
+}
+
+.product-item img.default {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+}
+
+.product-item img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.product-item h3,
+.product-item p,
+.product-item button {
+    position: relative;
+    z-index: 1;
+}
+
+.product-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.product-item p {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.product-item button {
+    padding: 0.5rem 1rem;
+    background-color: #797979;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.product-item button:hover {
+    background-color: #555;
+}

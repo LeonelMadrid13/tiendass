@@ -1,0 +1,27 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: #000;
+    font-size: 1.5rem;
+    background-color: #eee;
+    height: 65vh;
+    position: relative;
+}
+
+img.MorraFinal {
+    color: #000;
+    scale: 165%;
+    position: absolute;
+    top: 15vh;
+}
+
+.Footer h2 {
+    z-index: 1;
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+}
