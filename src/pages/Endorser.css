@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Fiona';
+    src: url('../assets/fonts/Fiona.woff2') format('woff2'),
+        url('../assets/fonts/Fiona.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.endorser-container {
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    color: white;
+}
+
+.endorser-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sizeSelect {
+    z-index: 2;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+option,
+select {
+    font-size: large;
+}
+
+.endorser-image {
+    background-color: #000000;
+    padding: 1rem;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 800px;
+    max-width: 700px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.endorser-item {
+    background-color: #000000;
+    padding: 1rem;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 800px;
+    max-width: 700px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.endorser-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.endorser-item img {
+    width: 100%;
+    height: 1200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
+
+.endorser-item img.default {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+}
+
+.endorser-item img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.endorcer-info {
+    padding-left: 20px;
+}
+
+.endorcer-info h3,
+.endorcer-info p,
+.endorcer-info button {
+    position: relative;
+    z-index: 1;
+}
+
+.endorcer-info h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.endorcer-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #ffff;
+}
+
+.endorcer-info button {
+    padding: 0.5rem 1rem;
+    background-color: #797979;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.endorcer-info button:hover {
+    background-color: #555;
+}

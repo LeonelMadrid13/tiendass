@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App';
-import Endorser from './pages/endorser/Endorser'
+import Endorser from './pages/Endorser'
 import reportWebVitals from './reportWebVitals';
 
 import {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/endorser/:identifier",
+    path: ":identifier",
     element: <Endorser />,
   },
 ]);

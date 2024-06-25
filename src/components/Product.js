@@ -29,7 +29,7 @@ const Product = ({ images, name, price, addToCart, identifier }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <Link to={`endorser/${identifier}`}>
+            <Link to={`/${identifier}`}>
                 <img
                     src={currentImage}
                     alt={`${name}`}
@@ -40,7 +40,7 @@ const Product = ({ images, name, price, addToCart, identifier }) => {
             <h3>{name}</h3>
             <p>${price}</p>
 
-            <button onClick={() => addToCart({ images, name, price })}>Agregar al Carrito</button>
+            <button onClick={() => addToCart({ images, name, price })}>Add to cart</button>
         </div>
 
     );
