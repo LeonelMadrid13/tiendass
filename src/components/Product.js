@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Product.css';
+import { Link } from 'react-router-dom/dist';
 
 const Product = ({ images, name, price, addToCart, identifier }) => {
     const [hovered, setHovered] = useState(false);
@@ -22,21 +23,26 @@ const Product = ({ images, name, price, addToCart, identifier }) => {
     }, [hovered, images]);
 
     return (
+
         <div
             className="product-item"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <img
-                src={currentImage}
-                alt={`${name}`}
-                className={`product-image ${identifier}`}
-            />
+            <Link to={`endorser/${identifier}`}>
+                <img
+                    src={currentImage}
+                    alt={`${name}`}
+                    className={`product-image ${identifier}`}
+                />
+            </Link>
+
             <h3>{name}</h3>
             <p>${price}</p>
 
             <button onClick={() => addToCart({ images, name, price })}>Agregar al Carrito</button>
         </div>
+
     );
 };
 

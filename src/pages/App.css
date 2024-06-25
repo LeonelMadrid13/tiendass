@@ -1,13 +1,14 @@
 @font-face {
   font-family: 'Fiona';
-  src: url('./assets/fonts/Fiona.woff2') format('woff2'),
-       url('./assets/fonts/Fiona.woff') format('woff');
+  src: url('../assets/fonts/Fiona.woff') format('woff1'),
+    url('../assets/fonts/Fiona.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Fiona', Arial, sans-serif; /* Aplicar la fuente personalizada globalmente */
+  font-family: 'Fiona', Arial, sans-serif;
+  /* Aplicar la fuente personalizada globalmente */
   margin: 0;
   padding: 0;
   background-color: #000000;
@@ -106,7 +107,7 @@ nav ul li a {
   background-color: #000000;
   padding: 1rem;
   border: 1px solid #000000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 800px;
   max-width: 700px;
@@ -119,7 +120,7 @@ nav ul li a {
 
 .product-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .product-item img {
@@ -209,7 +210,8 @@ form label {
   font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
