@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+    height: 1200px;
     width: 100%;
     color: white;
 }
@@ -47,7 +48,6 @@ select {
     border: 1px solid #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 800px;
     max-width: 700px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -62,7 +62,7 @@ select {
     border: 1px solid #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 800px;
+    height: 1090px;
     max-width: 700px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -78,7 +78,7 @@ select {
 
 .endorser-item img {
     width: 100%;
-    height: 1200;
+    height: 1090px;
     position: absolute;
     top: 0;
     left: 0;

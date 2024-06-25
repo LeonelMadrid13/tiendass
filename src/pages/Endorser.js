@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import './Endorser.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -35,21 +35,9 @@ function Endorser() {
         };
     }, [hovered, product.images]);
 
-    const customStyles = {
-        control: (provided) => ({
-            ...provided,
-            background: 'transparent',
-            display: 'flex',
-            flexWrap: 'nowrap',
-            borderColor: 'hsl(0deg 78.56% 55.56%);',
-            width: '7em'
-        }),
-        menu: (provided) => ({
-            ...provided,
-            background: 'transparent',
-            width: '4em'
-        }),
-    };
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return (
         <div className="Endorser">
